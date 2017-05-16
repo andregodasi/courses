@@ -1,0 +1,7 @@
+Resumo
+
+Breve introdução apresentado o conteúdo do curso, falando sobre SPA (Single Page Application), 
+mostrando os temas a serem abordado nas próximas como:
+* Diretivas
+* Roras(Router)
+* Template

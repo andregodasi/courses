@@ -1,0 +1,9 @@
+Resumo
+
+Feito a instalação do ambiente de desenvolvimento, o ambiente foi composto pela instalação do nodeJS para basicamente
+utilizar o NPM que é um gerenciador de pacotes e o Angular CLi, que serve para gerar projetos e componetes em angular, e a instalação do typeScript que
+será a linguangem utilizada para implementação.
+Para instalçao do node vá até o site nodejs.org e baixe, simples assim, execute e está 100%.
+Para instalação do type script abra o prompt de comando e execute npm install -g typeScript
+Para instalção do Angular CLI execute no prompt o comando npm install -g @angular/CLI
+
