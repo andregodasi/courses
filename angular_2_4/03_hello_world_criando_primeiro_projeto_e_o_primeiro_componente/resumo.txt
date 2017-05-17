@@ -1,0 +1,56 @@
+Summary 
+
+Nessa aula aprendemos  a criar projeto e component desde o zero sem e com a ajuda do CLI,
+para criação de projetos é necessario rodar o comando "ng new nomedoprojeto"
+para criação do component sem CLI é necessario criar um pasta dentro da pasta src/app, com o nome desejado 
+e criar um arquivo com o seguinte formato, nome-bonito.component.ts, então fazer a implementação 
+que ficou da seguinte forma:
+
+meu-primeiro.component.ts
+*********************************************************************************
+
+import {Component} from '@angular/core';
+
+@Component({
+    selector:'meu-primeiro-component',
+    template: `
+        <p>meu primeiro component com angular </p>
+        `
+})
+ export class MeuPrimeiroComponent{}
+
+ **********************************************************************************
+
+ para a utilização dele é necessario fazer a declaração do export como podemos ver no exemplo acima.
+
+ e no lugar que for utilizar esse component tempos que fazer o import no arquivo app.modele.ts como o exemplo seguinte.
+
+ 
+ app.module.ts
+ *********************************************************************************
+ import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { AppComponent } from './app.component';
+import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MeuPrimeiroComponent,
+    MeuPrimeiro2Component
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+*********************************************************************************

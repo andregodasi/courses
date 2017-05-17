@@ -1,0 +1,4 @@
+Summary
+
+Abordado o tema de templates, exemplificando que seria a parte de view do component, cujo a utilização seria 
+implementeção da parte do html e seus binding ou interpolações.

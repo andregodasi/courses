@@ -1,0 +1,5 @@
+Summary
+
+Introdução ao typeScript, por definição o typeScript é um super Set do javaScript, que ingloba javaScript vanila, ES6.
+Foi apresentando o transpiler do typeScript e Babel, e mostrando que algumas coisas que existem no typeScript não existem 
+ainda no javaScript como interfaces e decoretors. 

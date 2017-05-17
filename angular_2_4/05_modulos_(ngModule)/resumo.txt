@@ -1,0 +1,41 @@
+Summary
+
+Foi explicado a utilização do Module, para oquê ele serve, ele serve para separar sua aplicação em varios 
+module para facilitar manutenção e acoplamento.
+Sempre que é criado um modulo novo ele ter receber export para ele ser vistos por outros modules. exemplo:
+
+export class CursosModule { }
+
+
+e ser importado para o modulo que irar utilizalo realmente, como no exemplo abaixo 
+
+app.module.ts
+************************************************************************************
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { AppComponent } from './app.component';
+import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
+====>>>import { CursosModule } from './cursos/cursos.module';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MeuPrimeiroComponent,
+    MeuPrimeiro2Component
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+====>>> CursosModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+************************************************************************************
